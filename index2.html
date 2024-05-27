@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infodev</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+
+
+    /* Custom CSS */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+.header .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo h1 {
+    margin-right: 5px;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: #ffc107;
+}
+
+.header .btn-getstarted {
+    background-color: #ffc107;
+    color: #343a40;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header .btn-getstarted:hover {
+    background-color: #ffca2c;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x800');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero .hero-text {
+    padding: 50px;
+}
+
+.hero .hero-title-wrap {
+    align-items: center;
+}
+
+.hero .hero-title-wrap img {
+    border-radius: 50%;
+}
+
+.hero .hero-title {
+    font-size: 48px;
+    color: #fff;
+}
+
+.hero .hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.about ul li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffc107;
+}
+
+/* Services Section */
+.services {
+    background-color: #343a40;
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.services .row {
+    justify-content: space-between;
+}
+
+.services .service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+}
+
+.services .service-item h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.services .service-item p {
+    color: #777;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.contact .info {
+    margin-bottom: 30px;
+}
+
+.contact .info h4 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.contact .info p {
+    color: #777;
+}
+
+.contact form input,
+.contact form textarea {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    border-color: #ffc107;
+}
+
+.contact form button {
+    background-color: #ffc107;
+    border: none;
+    color: #343a40;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #ffca2c;
+}
+
+/* Footer */
+#footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+
+#footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    color: #ffc107;
+}
+
+</style>
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <h1>INFODEV</h1>
+                <span>.</span>
+            </a>
+            <!-- Nav Menu -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#section_1" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#section_3">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#team">Team</a></li> -->
+                    <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li class="dropdown has-dropdown"><a href="#"><span>services</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul class="dd-box-shadow">
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul class="dd-box-shadow">
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                   
+                                </ul>
+                           
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <!-- End Nav Menu -->
+            <a class="btn-getstarted" href="#about">Get Started</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div class="hero-text">
+                        <div class="hero-title-wrap d-flex align-items-center mb-4">
+                            <img src="https://via.placeholder.com/150" class="avatar-image avatar-image-large img-fluid" alt="">
+                            <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
+                        </div>
+                        <h2 class="mb-4">I’m available for freelance work.</h2>
+                        <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 position-relative">
+                    <div class="hero-image-wrap"></div>
+                    <img src="https://via.placeholder.com/300" class="hero-image img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                        <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                        <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="section_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-12 mx-auto">
+                    <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                        <img src="https://via.placeholder.com/150" class="avatar-image img-fluid" alt="">
+                        <h2 class="text-white ms-4 mb-0">Services</h2>
+                    </div>
+                    <div class="row pt-lg-5">
+                        <!-- Services Items -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Projects Section -->
+    <div class="container">
+        <div class="row">
+            <!-- Projects Cards -->
+        </div>
+    </div>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <div class="row mt-1">
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mt-5 mt-lg-0">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-lg-6 form-group mt-3 mt-lg-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Links -->
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <!-- End Footer Links -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

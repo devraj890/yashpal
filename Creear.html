@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Custom styles for the career page */
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 50px;
+            margin-bottom: 0;
+        }
+
+        .job-listing {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="images/image1.jpg" alt="">
+                <h1>INFODEV</h1>
+                <span>.</span>
+            </a>
+            <div class="call-icon">
+                <a href="tel:1234567890">
+                    <img src="images/call1.png" alt="Call Icon">
+                </a>
+
+            </div>
+
+            <!-- Scroll to Top arrow button -->
+
+
+            <nav id="navbar" class="navmenu navbar">
+                <ul>
+                    <li><a href="index.html#hero" class="active">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <!-- <li><a href="index.html#portfolio">Portfolio</a></li> -->
+                    <li><a href="/Creear.html">Creear</a></li>
+                    <li class="dropdown has-dropdown"><a href="#"><span>Services</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul class="dd-box-shadow">
+                            <li><a href="#">Web development</a></li>
+                            <li class="dropdown has-dropdown"><a href="#"><span>Devdeep</span> <i
+                                        class="bi bi-chevron-down"></i></a>
+                                <ul class="dd-box-shadow">
+                                    <li><a href="#">Devops</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <img src="images/menu.webp" alt="Menu" style="height: 30px; "
+                    class="menu-img mobile-nav-toggle d-xl-none bi bi-list" onclick="toggleNavbar()">
+            </nav>
+
+
+            <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+        </div>
+    </header><!-- End Header -->
+    </section>
+    <div style="margin: 100px;">
+        <!-- Career Opportunities Section -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Join Our Team!</h1>
+                <p class="lead">Explore career opportunities at Your IT Company and be part of our innovative and
+                    dynamic team.</p>
+            </div>
+        </div>
+
+        <div class="container" style="margin: 10px;">
+            <!-- Job Listings -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="job-listing">
+                        <h3>Software Developer</h3>
+                        <p>We are looking for skilled software developers with expertise in web and mobile application
+                            development.</p>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="job-listing">
+                        <h3>Data Analyst</h3>
+                        <p>We are seeking a data analyst to analyze and interpret complex data sets to provide valuable
+                            insights to our clients.</p>
+                        <a href="#" class="btn btn-primary">Apply Now</a>
+                    </div>
+                </div>
+                <!-- Add more job listings as needed -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-utils.js"></script>
+    <script src="js/jquery-utils.min.js"></script>
+    <script src="js/jquery.slim.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper-utils.js"></script>
+    <script src="js/popper.js"></script>
+
+    <script src="js/popper-utils.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+
+        function toggleNavbar() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
